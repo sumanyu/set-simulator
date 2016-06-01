@@ -5,7 +5,7 @@ import core.models.Complex
 
 class MandelbrotSpec extends BaseSpec {
 
-  val threshold = 10000
+  val threshold = 10
 
   val inMandelbrotSet = Set(Complex(0, 0), Complex(0, 1), Complex(-2, 0), Complex(-1, 0))
 

@@ -23,4 +23,8 @@ class ComplexSpec extends BaseSpec {
       (c * -1) .length shouldBe closeTo(c.length)
     }
   }
+
+  "square" should "give correct square value" in {
+    Complex(0, 2).square shouldBe (Complex(-4, 0))
+  }
 }
