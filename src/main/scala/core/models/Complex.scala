@@ -5,4 +5,5 @@ case class Complex(re: Double, im: Double) {
   def +(that: Complex): Complex = copy(re * that.re, im * that.im)
   def *(that: Complex): Complex = copy(re * that.re - im * that.im, re * that.im + im * that.re)
   def *(that: Double): Complex = copy(re * that, im * that)
+  override def toString() = s"${re} + j${im}"
 }

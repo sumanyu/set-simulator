@@ -1,9 +1,8 @@
 package core
 
 import core.models.Complex
-import org.scalatest.FlatSpec
 
-class ComplexSpec extends FlatSpec with Helpers {
+class ComplexSpec extends BaseSpec {
 
   "length" should "be zero for zero complex number" in {
     Complex(0, 0).length shouldBe closeTo(0.0)
